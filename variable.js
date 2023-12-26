@@ -2,7 +2,7 @@
 // flexible === dangerous
 'use strict'; // 엄격 모드에서 동작하는 코드
 
-// 2. Variable(변수)
+// 2. Variable(변수), rw(read/write)
 // let (added in ES6)
 let globalName = 'global name';
 {
@@ -15,8 +15,13 @@ console.log(name);
 console.log(globalName);
 // 호이스팅(hoisting): 어디에 선언했든 상관없이 제일 위로 끌어 올려주는것
 
-// 3. Constants 상수
+// 3. Constant 상수, r(read) 가능한 const 사용하자
 const imm = 7;
+
+// Note!
+// Immutable data types : premitive types, frozen objects (i.e. object.freeze())
+// Mutable data types : all objects by default are mutable in JS
+// favor immutable data type always for a few reasons;
 
 // 4. Variable types 데이터 타입
 // primitive(string, number, bollean, null, undefined, symbol) ! Java, C 와달리 number로 통일
@@ -70,6 +75,10 @@ const gSymbol2 = Symbol.for('id');
 console.log(gSymbol1 === gSymbol2); // true
 // Symbol 을 출력시 .description 이용
 console.log(`value: ${symbol1.description}, type: ${typeof symbol1}`);
+
+// object, real-life object, data structur
+// object를 가리키는 reference가 메모리에 저장된다.
+const han = {name: 'haneul', age: 24};
 
 // 5. Dynamic typing : dynamically typed launguage
 // 결론 : 타입스크립트
