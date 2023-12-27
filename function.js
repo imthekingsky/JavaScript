@@ -111,7 +111,7 @@ const sumAgain = sum;
 console.log(sumAgain(1, 3));
 
 // 2. Callback function using function expression
-// 다른 함수에게 인자로 전달되어 나중에 실행되는 함수
+// 콜백함수: 다른 함수에게 인자로 전달되어 나중에 실행되는 함수
 function randomQuiz(answer, printYes, printNo) {
     if (answer === 'love you') {
         printYes();
