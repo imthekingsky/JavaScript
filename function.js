@@ -133,7 +133,7 @@ const printNo = function print() {
 randomQuiz('wrong', printYes, printNo);
 randomQuiz('love you', printYes, printNo);
 
-// Arrow function
+// Arrow function(화살표 함수)
 // always anonymous
 
 // const simplePrint = function () {
